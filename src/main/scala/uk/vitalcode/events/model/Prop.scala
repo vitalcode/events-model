@@ -1,5 +1,7 @@
 package uk.vitalcode.events.model
 
+import uk.vitalcode.events.model.PropType.PropType
+
 object PropType extends Enumeration with Serializable {
     type PropType = Value
     val Text, Date, Image = Value
