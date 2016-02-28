@@ -1,9 +1,9 @@
 import sbtassembly.AssemblyPlugin.autoImport._
 
 name := """events-model"""
-organization := "Vitaliy Kuznetsov & Lesia Mirchenko"
+organization := "vitalcode"
 version := "0.0.1"
-scalaVersion := "2.10.6"
+crossScalaVersions := Seq("2.10.6", "2.11.7")
 
 libraryDependencies ++= {
     val scalaTestV = "2.2.5"
@@ -19,4 +19,3 @@ libraryDependencies ++= {
 }
 
 assemblyJarName in assembly := "model.jar"
-crossScalaVersions := Seq("2.10.6", "2.11.7")
