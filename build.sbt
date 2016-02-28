@@ -19,3 +19,4 @@ libraryDependencies ++= {
 }
 
 assemblyJarName in assembly := "model.jar"
+crossScalaVersions := Seq("2.10.6", "2.11.7")
