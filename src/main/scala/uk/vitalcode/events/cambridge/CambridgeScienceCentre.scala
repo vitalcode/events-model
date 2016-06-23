@@ -2,8 +2,8 @@ package uk.vitalcode.events.cambridge
 
 import uk.vitalcode.events.model.{Page, PropType, PropBuilder, PageBuilder}
 
-object Pages {
-    val cambridgeScienceCentre: Page = PageBuilder()
+object CambridgeScienceCentre {
+    val page: Page = PageBuilder()
         .setId("list")
         .setUrl("http://www.cambridgesciencecentre.org/whats-on/list/")
         .addPage(PageBuilder()
