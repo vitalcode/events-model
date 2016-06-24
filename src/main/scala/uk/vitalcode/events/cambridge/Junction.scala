@@ -33,12 +33,12 @@ object Junction {
                 .setCss("#event-inner > .row:nth-child(3) > div:nth-child(2)")
                 .setKind(PropType.Text)
             )
-//            .addProp(PropBuilder()
-//                .setName("when")
-//                .setCss("#event-inner > .row:nth-child(2) > div")
-//                .setKind(PropType.Date)
-//
-//            )
+            .addProp(PropBuilder()
+                .setName("when")
+                .setCss("#event-inner > .row:nth-child(2) > div")
+                .setKind(PropType.Date)
+
+            )
         )
         .build()
 }
