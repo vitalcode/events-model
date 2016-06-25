@@ -25,7 +25,7 @@ object Junction {
             )
             .addProp(PropBuilder()
                 .setName("description")
-                .setCss("#block-views-event-tabs-block .tab-inner > p.MsoNormal:nth-child(16)")
+                .setCss("#block-views-event-tabs-block .tab-inner > p")
                 .setKind(PropType.Text)
             )
             .addProp(PropBuilder()
