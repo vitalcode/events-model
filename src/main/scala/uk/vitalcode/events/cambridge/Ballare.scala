@@ -1,0 +1,40 @@
+package uk.vitalcode.events.cambridge
+
+import uk.vitalcode.events.model.{Page, PropType, PropBuilder, PageBuilder}
+
+object Ballare {
+    val page: Page = PageBuilder()
+        .isRow(true)
+        .setId("ballare:description")
+        .setUrl("http://www.ballare.co.uk/cambridge/event/271171/lust")
+        .addPage(PageBuilder()
+            .setId("ballare:image")
+            .setLink("#content .upsell-banner > img")
+            .addProp(PropBuilder()
+                .setName("image")
+                .setKind(PropType.Image)
+            )
+        )
+        .addProp(PropBuilder()
+            .setName("title")
+            .setCss("#events-detail > .row:nth-child(1) > .columns  h1.page-heading")
+            .setKind(PropType.Text)
+        )
+        .addProp(PropBuilder()
+            .setName("description")
+            .setCss("#left-content  p")
+            .setKind(PropType.Text)
+        )
+        .addProp(PropBuilder()
+            .setName("when")
+            .setCss("#events-detail > .row:nth-child(1) > .columns  span.event-detail-info")
+            .setKind(PropType.Date)
+
+        )
+        .addPage(PageBuilder()
+            .setRef("ballare:description")
+            .setId("ballare:other")
+            .setLink("http://www.ballare.co.uk/cambridge/event/230722/memoria")
+        )
+        .build()
+}
