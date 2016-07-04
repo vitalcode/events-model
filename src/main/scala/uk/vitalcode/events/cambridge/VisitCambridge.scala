@@ -43,12 +43,12 @@ object VisitCambridge {
                 .setCss("#mainCol > .productDetailTop .contactBar .leftBlock .telephone")
                 .setKind(PropType.Text)
             )
-//            .addProp(PropBuilder()
-//                .setName("when")
-//                .setCss("#mainCol > .tabsProduct .productDetail .overviewRight .openingTimes table > thead > tr.opening > th > span.date, #mainCol > .tabsProduct .productDetail .overviewRight .openingTimes table > tbody > tr > td > span") // TODO check again
-//                .setKind(PropType.Date)
-//
-//            )
+            .addProp(PropBuilder()
+                .setName("when")
+                .setCss("#mainCol > .tabsProduct .productDetail .openingTimes table > thead > tr.opening > th > span.date, #mainCol > .tabsProduct .productDetail .openingTimes table > tbody > tr > td") // TODO check again
+                .setKind(PropType.Date)
+
+            )
         )
         .addPage(PageBuilder()
             .setRef("visitCambridge:list")
