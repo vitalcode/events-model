@@ -7,7 +7,7 @@ object PropType extends Enumeration with Serializable {
     val Text, Date, Image = Value
 }
 
-case class Prop(name: String, css: String, kind: PropType, values: Set[String]) extends Serializable
+case class Prop(name: String, css: String, kind: PropType, values: Vector[String]) extends Serializable
 
 case class PropBuilder() extends Builder {
     private var name: String = _
@@ -31,5 +31,5 @@ case class PropBuilder() extends Builder {
 
     override type t = Prop
 
-    override def build(): Prop = new Prop(name, css, kind, Set.empty[String])
+    override def build(): Prop = new Prop(name, css, kind, Vector.empty[String])
 }
