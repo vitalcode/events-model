@@ -10,8 +10,9 @@ object PropType extends Enumeration with Serializable {
 case class Prop(name: String, css: String, kind: PropType, values: Vector[String]) extends Serializable
 
 case class PropBuilder() extends Builder {
-    private var name: String = _
+    private var name: String = _ // TODO rethink, may use Option?
     private var css: String = _
+    private var value: String = _
     private var kind: PropType = _
 
     def setName(name: String): PropBuilder = {
@@ -24,6 +25,12 @@ case class PropBuilder() extends Builder {
         this
     }
 
+    def setValue(value: String): PropBuilder = {
+        this.value = value
+        this
+    }
+
+
     def setKind(kind: PropType): PropBuilder = {
         this.kind = kind
         this
@@ -31,5 +38,5 @@ case class PropBuilder() extends Builder {
 
     override type t = Prop
 
-    override def build(): Prop = new Prop(name, css, kind, Vector.empty[String])
+    override def build(): Prop = new Prop(name, css, kind, if (value == null) Vector.empty[String] else Vector(value))
 }

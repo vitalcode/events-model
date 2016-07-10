@@ -39,6 +39,11 @@ object Junction {
                 .setKind(PropType.Date)
 
             )
+            .addProp(PropBuilder()
+                .setName("venue")
+                .setValue("Cambridge Junction, Clifton Way, Cambridge, CB1 7GX")
+                .setKind(PropType.Text)
+            )
         )
         .build()
 }

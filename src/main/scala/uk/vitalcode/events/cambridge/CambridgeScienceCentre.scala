@@ -39,6 +39,11 @@ object CambridgeScienceCentre {
                 .setKind(PropType.Date)
 
             )
+            .addProp(PropBuilder()
+                .setName("venue")
+                .setValue("Cambridge Science Centre, 18 Jesus Lane, Cambridge, CB5 8BQ")
+                .setKind(PropType.Text)
+            )
         )
         .addPage(PageBuilder()
             .setRef("list")
