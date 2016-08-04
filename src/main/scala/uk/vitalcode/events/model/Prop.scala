@@ -1,5 +1,6 @@
 package uk.vitalcode.events.model
 
+import uk.vitalcode.events.model.Category.Category
 import uk.vitalcode.events.model.PropType.PropType
 
 object PropType extends Enumeration with Serializable {
@@ -30,6 +31,10 @@ case class PropBuilder() extends Builder {
         this
     }
 
+    def setValue(category: Category): PropBuilder = {
+        this.value = value.toString.toLowerCase
+        this
+    }
 
     def setKind(kind: PropType): PropBuilder = {
         this.kind = kind

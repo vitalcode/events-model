@@ -12,4 +12,6 @@ object Category extends Enumeration {
     val SPORT = Value(7)
     val WILDLIFE = Value(8)
     val WORKSHOP = Value(9)
+    val THEATRE = Value(10)
 }
+

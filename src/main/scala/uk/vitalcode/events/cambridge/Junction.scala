@@ -1,6 +1,6 @@
 package uk.vitalcode.events.cambridge
 
-import uk.vitalcode.events.model.{Page, PropType, PropBuilder, PageBuilder}
+import uk.vitalcode.events.model._
 
 object Junction {
     val page: Page = PageBuilder()
@@ -42,6 +42,11 @@ object Junction {
             .addProp(PropBuilder()
                 .setName("venue")
                 .setValue("Cambridge Junction, Clifton Way, Cambridge, CB1 7GX")
+                .setKind(PropType.Text)
+            )
+            .addProp(PropBuilder()
+                .setName("venue-category")
+                .setValue(Category.THEATRE)
                 .setKind(PropType.Text)
             )
         )

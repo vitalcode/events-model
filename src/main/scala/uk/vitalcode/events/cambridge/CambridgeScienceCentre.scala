@@ -1,6 +1,6 @@
 package uk.vitalcode.events.cambridge
 
-import uk.vitalcode.events.model.{Page, PropType, PropBuilder, PageBuilder}
+import uk.vitalcode.events.model._
 
 object CambridgeScienceCentre {
     val page: Page = PageBuilder()
@@ -42,6 +42,11 @@ object CambridgeScienceCentre {
             .addProp(PropBuilder()
                 .setName("venue")
                 .setValue("Cambridge Science Centre, 18 Jesus Lane, Cambridge, CB5 8BQ")
+                .setKind(PropType.Text)
+            )
+            .addProp(PropBuilder()
+                .setName("venue-category")
+                .setValue(Category.FAMILY)
                 .setKind(PropType.Text)
             )
         )
