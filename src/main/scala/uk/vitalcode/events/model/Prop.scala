@@ -32,7 +32,7 @@ case class PropBuilder() extends Builder {
     }
 
     def setValue(category: Category): PropBuilder = {
-        this.value = value.toString.toLowerCase
+        this.value = category.toString.toLowerCase
         this
     }
 
