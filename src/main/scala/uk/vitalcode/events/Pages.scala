@@ -5,9 +5,9 @@ import uk.vitalcode.events.model.Page
 
 object Pages {
     val all: Set[Page] = Set(
-        CambridgeScienceCentre.page,
-        Junction.page,
+//        CambridgeScienceCentre.page,
+//        Junction.page,
         VisitCambridge.page,
-        AdcTheater.page
+        //AdcTheater.page
     )
 }
