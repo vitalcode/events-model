@@ -7,7 +7,7 @@ object Pages {
     val all: Set[Page] = Set(
 //        CambridgeScienceCentre.page,
 //        Junction.page,
-        VisitCambridge.page,
+        VisitCambridge.page
         //AdcTheater.page
     )
 }
