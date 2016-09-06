@@ -52,7 +52,7 @@ object VisitCambridge {
         )
         .addPage(PageBuilder()
             .setRef("visitCambridge:list")
-            .setId("pagination")
+            .setId("visitCambridge:pagination")
             .setLink("#mainCol .ProductListMain > ul.paging:last-child > li:last-child > a")
         )
         .build()
