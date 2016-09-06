@@ -5,7 +5,7 @@ import uk.vitalcode.events.model._
 object CambridgeScienceCentre {
     val page: Page = PageBuilder()
         .setId("cambridgeScienceCentre:list")
-        .setUrl("http://www.cambridgesciencecentre.org/whats-on/list/")
+        .setUrl("http://www.cambridgesciencecentre.org/whats-on/events-calendar/")
         .addPage(PageBuilder()
             .isRow(true)
             .setId("cambridgeScienceCentre:description")
