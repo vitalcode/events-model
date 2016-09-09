@@ -1,6 +1,6 @@
 package uk.vitalcode.events
 
-import uk.vitalcode.events.cambridge.{AdcTheater, CambridgeScienceCentre, Junction, VisitCambridge}
+import uk.vitalcode.events.cambridge._
 import uk.vitalcode.events.model.Page
 
 object Pages {
@@ -8,6 +8,7 @@ object Pages {
         CambridgeScienceCentre.page,
         Junction.page,
         VisitCambridge.page,
-        AdcTheater.page
+        AdcTheater.page,
+        WestRoad.page
     )
 }
