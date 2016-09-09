@@ -8,10 +8,10 @@ object WestRoad {
         .setUrl("http://www.westroad.org/whats-on/")
         .addPage(PageBuilder()
             .isRow(true)
-            .setId("visitCambridge:description")
+            .setId("westRoad:description")
             .setLink("#content-left  > ul.forthcoming-list > li > a")
             .addPage(PageBuilder()
-                .setId("visitCambridge:image")
+                .setId("westRoad:image")
                 .setLink("#content-left > img")
                 .addProp(PropBuilder()
                     .setName("image")
@@ -49,12 +49,10 @@ object WestRoad {
                 .setKind(PropType.Text)
             )
         )
-
         .addPage(PageBuilder()
             .setRef("westRoad:list")
             .setId("westRoad:pagination")
             .setLink("#content-left a.next")
         )
-
         .build()
 }
